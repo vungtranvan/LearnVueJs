@@ -3,12 +3,12 @@
     <h2>Hello {{ name }}</h2>
     <p>{{ like }}</p>
     <p v-bind="$attrs">{{ isLove }}</p>
-    <ComponentA/>
+    <MainTopComponent/>
   </div>
 </template>
 
 <script>
-import ComponentA from './components/ComponentA.vue';
+import MainTopComponent from './MainTop.vue';
 
 export default {
   name: "HeaderComponent",
@@ -23,7 +23,7 @@ export default {
   },
   inheritAttrs: false,
   components: {
-    ComponentA,
+    MainTopComponent,
   }
 };
 </script>

@@ -1,16 +1,27 @@
 <template>
-  <HeaderComponent id="ok" name="Vung 123 ok" :like="50" :isLove="true"/>
+  <p>{{ name }}</p>
+  <HeaderComponent id="ok" name="" :like="50" :isLove="true" />
 </template>
 
 <script>
-import HeaderComponent from './components/Header.vue'
+import HeaderComponent from "./components/Header.vue";
 
 export default {
   name: "App",
   components: {
     HeaderComponent,
-  }
-}
+  },
+  data() {
+    return {
+      name: "Vungcaca",
+    };
+  },
+  provide() {
+    return {
+      username: this.name,
+    };
+  },
+};
 </script>
 
 <style>
