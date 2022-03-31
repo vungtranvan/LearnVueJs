@@ -1,4 +1,4 @@
-# session02-vuejs
+# session02-vuajs3
 
 ## Project setup
 ```

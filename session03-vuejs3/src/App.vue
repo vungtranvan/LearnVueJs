@@ -1,20 +1,16 @@
 <template>
-  <header-app />
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <HeaderComponent id="ok" name="Vung 123 ok" :like="50" :isLove="true"/>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-import Header from "./components/Header.vue";
+import HeaderComponent from './components/Header.vue'
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
-    HeaderApp: Header
-  },
-};
+    HeaderComponent,
+  }
+}
 </script>
 
 <style>
